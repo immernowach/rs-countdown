@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Countdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen relative">
+
+    <!-- Background image and overlay -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('army-vektor.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white p-4">
+        <span id="daysLeft" class="text-4xl"></span>
+        <span class="text-gray-200 font-thin italic">Tage</span>
+        <span id="hoursLeft" class="text-4xl"></span>
+        <span class="text-gray-200 font-thin italic">Std.</span>
+        <span id="minutesLeft" class="text-4xl"></span>
+        <span class="text-gray-200 font-thin italic">Min.</span>
+        <span id="secoundsLeft" class="text-4xl"></span>
+        <span class="text-gray-200 font-thin italic">Sek.</span>
+
+        <h1 id="title" class="text-3xl font-medium mb-12 mt-12 cursor-pointer">Wie lange noch???</h1>
+
+        <div class="flex space-x-4 justify-center">
+            <div class="p-4">
+                <span id="weeksCount" class="text-4xl"></span>
+                <span class="text-4xl font-light text-gray-300 font-thin">/</span>
+                <span id="weeksMax" class="text-2xl text-gray-300 font-thin"></span>
+                <div id="weeksLabel" class="">Wochen übrig</div>
+            </div>
+
+            <div class="p-4">
+                <span id="daysCount" class="text-4xl"></span>
+                <span class="text-4xl font-light text-gray-300">/</span>
+                <span id="daysMax" class="text-2xl text-gray-300"></span>
+                <div id="daysLabel">Tage übrig</div>
+            </div>
+        </div>
+
+        <div class="p-4 mb-2 mt-2 rounded-lg">
+            <span id="progressPercent" class="text-4xl"></span>
+            <span class="text-4xl font-light text-gray-300">/</span>
+            <span class="text-2xl font-light">100%</span>
+            <div id="percentLabel">Prozent geschafft</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

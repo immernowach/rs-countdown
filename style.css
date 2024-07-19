@@ -1,0 +1,20 @@
+body {
+    /* Set the background image */
+    background-image: url('army-vektor.jpg');
+    
+    /* Ensure the image covers the entire background */
+    background-size: cover;
+    
+    /* Keep the image fixed in place as you scroll */
+    background-attachment: fixed;
+    
+    /* Position the image in the center of the screen */
+    background-position: center center;
+    
+    /* Ensure the background doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Set a background color as a fallback */
+    background-color: #ffffff; /* Adjust color as needed */
+
+}
