@@ -18,11 +18,9 @@ $(document).ready(function() {
         if (showTimeLeft) {
             $("#weeksLabel").text("Wochen übrig");
             $("#daysLabel").text("Tage übrig");
-            $("#percentLabel").text("Prozent übrig");
         } else {
             $("#weeksLabel").text("Wochen geschafft");
             $("#daysLabel").text("Tage geschafft");
-            $("#percentLabel").text("Prozent geschafft");
         }
     }
 
